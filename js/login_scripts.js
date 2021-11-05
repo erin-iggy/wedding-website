@@ -10,9 +10,20 @@ $(document).ready(function () {
     
     /********************** Login *********************/    
     $('#btn-login').click(function() {
-        sessionStorage.setItem(sessionKey, true); 
-        location = "index.html";
+//        console.log($('#password-input').val());
+        if ($('#password-input').val() == 'pw') {
+            sessionStorage.setItem(sessionKey, true); 
+            location = "index.html";            
+        } else {
+             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> It is pw ya noob. '));
+        }
+
 
     });
+    
+    // alert_markup
+    function alert_markup(alert_type, msg) {
+        return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>';
+    }
 
 });
