@@ -11,15 +11,23 @@ $(document).ready(function () {
     /********************** Login *********************/    
     $('#btn-login').click(function() {
 //        console.log($('#password-input').val());
+        console.log("click");
+        loginHelper();
+    });
+    
+    $('#login-form').submit(function() {
+        console.log("submit");
+        loginHelper();
+    });
+    
+    function loginHelper() {
         if ($('#password-input').val() == 'pw') {
             sessionStorage.setItem(sessionKey, true); 
             location = "index.html";            
         } else {
              $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> It is pw ya noob. '));
         }
-
-
-    });
+    }
     
     // alert_markup
     function alert_markup(alert_type, msg) {

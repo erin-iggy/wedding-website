@@ -19,7 +19,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Erin & Ignatius getting hitched">
     <meta property="og:description" content="We would like to invite you to our big day.">
-    <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg">
+    <meta property="og:image" content="https://wedding.ramswaroop.me/img/landing_login.jpg">
     <meta property="og:type" content="website">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -35,41 +35,39 @@
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+        }
+    </style>
 </head>
 <body id="top">
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-<section class="hero">
+<section class="login">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
+
+                
                 <div class="hero-content text-center">
-                    <!--<h1>Ram and Antara</h1>-->
-                    <img src="img/logo-lg.png">
-                    <!--<p class="intro">Erin & Ignatius are getting hitched!</p>-->
-                    <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
+                <div class="login-box">
+                    <div class="login-text">Please enter the password</div>
+                    <form id="login-form">
+                        <div class="row">
+                            <input id="password-input" name="password" placeholder="Password">
+
+                        </div>
+                        <input type="submit" style="display: none" />
+                        <a class="btn btn-accent btn-small login-btn" id="btn-login">Enter</a>
+                    </form>
+                </div>
+                    
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 hidden-xs"></div>
-            <div class="col-sm-4 hidden-xs text-center">
-                
-                
-            <div class="col-md-12">
-<!--                <h3>What are you waiting for?</h3>-->
-                <p>Please enter the password</p>
-                <div class="row">
-                    <input id="password-input" name="password" placeholder="Password">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12" id="alert-wrapper"></div>
-            </div>
-            <a class="btn btn-accent btn-large login-btn" id="btn-login">Login</a></div>
-            <div class="col-sm-4 hidden-xs"></div>
         </div>
     </div>
     </section>
