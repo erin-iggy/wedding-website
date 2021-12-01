@@ -129,6 +129,9 @@ Animations
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+.floating-arrow-container {
+  margin: 0px auto;
+}
 @keyframes floating-arrow {
   from {
     transform: translate(-50%, 0)
@@ -258,11 +261,9 @@ Hero
   background-size: cover;
   position: relative;
 
-  /*.rsvp-btn {
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-  }*/
+  .rsvp-btn {
+    margin-bottom: 40px;
+  }
   .down-arrow a {
     color: $txt-light;
   }
@@ -277,7 +278,7 @@ Hero
     margin-bottom: 80px;
   }
   .hero-content {
-    padding-top: 40%;
+    padding-top: 80%;
   }
   .hero-content img {
     width: 55%;
@@ -404,6 +405,7 @@ header {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
+  flex-direction: column;
 }
 
 /* ==========================================================================
