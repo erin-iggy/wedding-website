@@ -8,6 +8,7 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
 
+// sass sass/styles.scss:css/styles.min.css --style compressed
 /* ==========================================================================
 Global Styles
 ========================================================================== */
@@ -60,6 +61,13 @@ section .header {
 }
 .section-border {
   border-bottom: 1px solid $keyline-color;
+}
+.my-row {
+    display: flex;
+    justify-content: space-between;
+}
+.my-item {
+    display:flex;
 }
 .tooltip {
   position: absolute;
@@ -407,7 +415,15 @@ header {
   transform: translateX(-50%);
   flex-direction: column;
 }
-
+.address-container {
+  display: flex;
+  flex-direction: column;
+    padding-bottom: 10px;
+}
+.no-spacing {
+    padding: 0px;
+    margin: 0px;
+}
 /* ==========================================================================
 Social share buttons
 ========================================================================== */
@@ -443,7 +459,7 @@ Intro
   }
 }
 #intro p {
-  text-align: center;
+  text-align: left;
 }
 
 /* ==========================================================================
